@@ -1,0 +1,59 @@
+<Container>:
+  #canvas:
+  #  Rectangle:
+  #    source: 'logo.jpg'
+  #    size: self.size
+  #    pos: self.pos
+  rows: 4
+  padding: 50
+
+  obj_top_label_1: top_label_1
+  obj_top_label_2: top_label_2
+  obj_mid_label: mid_label
+
+  Label:
+    size_hint: 0.9, 0.9
+    id: top_label_1
+    text: "   Приложение   "
+    font_size: 40
+    color: "black"
+
+  Label:
+    size_hint: 0.9, 0.9
+    id: top_label_2
+
+
+
+  Label:
+    id: mid_label
+    text: "Выбери действие !"
+    font_size: 30
+    color: "green"
+
+  FloatLayout:
+    Button:
+      size_hint: 0.3, 0.3
+      pos_hint: {"x":0, "y":0}
+      text: "Анекдоты"
+      color: "black"
+
+      on_release:
+        root.real_time() 
+
+    Button:
+      size_hint: 0.3, 0.3
+      pos_hint: {"x":0.35, "y":0}
+      text: "Рассказы"
+      color: "black"
+
+      on_release:
+        root.real_date()
+
+    Button:
+      size_hint: 0.3, 0.3
+      pos_hint: {"x":0.7, "y":0}
+      text: "Цитаты"
+      color: "black"
+
+      on_release:
+        root.real_rofl()
