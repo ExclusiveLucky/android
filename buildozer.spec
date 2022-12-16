@@ -28,7 +28,7 @@ source.dir = .
 #source.exclude_patterns = license,images/*/*.jpg
 
 # (str) Application versioning (method 1)
-version = 0.3
+version = 0.1
 
 # (str) Application versioning (method 2)
 # version.regex = __version__ = ['"](.*)['"]
@@ -36,7 +36,7 @@ version = 0.3
 
 # (list) Application requirements
 # comma separated e.g. requirements = sqlite3,kivy
-requirements = python3,kivy==2.0.0
+requirements = python3,kivy,requests
 
 # (str) Custom source folders for requirements
 # Sets custom source for any requirements with recipes
@@ -65,7 +65,7 @@ orientation = all
 osx.python_version = 3
 
 # Kivy version to use
-osx.kivy_version = 2.0.0
+#osx.kivy_version = 2.0.0
 
 #
 # Android specific
@@ -284,18 +284,18 @@ android.allow_backup = True
 # (str) Path to a custom kivy-ios folder
 #ios.kivy_ios_dir = ../kivy-ios
 # Alternately, specify the URL and branch of a git checkout:
-ios.kivy_ios_url = https://github.com/kivy/kivy-ios
-ios.kivy_ios_branch = master
+#ios.kivy_ios_url = https://github.com/kivy/kivy-ios
+#ios.kivy_ios_branch = master
 
 # Another platform dependency: ios-deploy
 # Uncomment to use a custom checkout
 #ios.ios_deploy_dir = ../ios_deploy
 # Or specify URL and branch
-ios.ios_deploy_url = https://github.com/phonegap/ios-deploy
-ios.ios_deploy_branch = 1.10.0
+#ios.ios_deploy_url = https://github.com/phonegap/ios-deploy
+#ios.ios_deploy_branch = 1.10.0
 
 # (bool) Whether or not to sign the code
-ios.codesign.allowed = false
+#ios.codesign.allowed = false
 
 # (str) Name of the certificate to use for signing the debug version
 # Get a list of available identities: buildozer ios list_identities
